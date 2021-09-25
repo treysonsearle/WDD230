@@ -1,1 +1,0 @@
-document.querySelector('time').innerHTML = Date().getFullYear()

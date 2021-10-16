@@ -36,4 +36,9 @@
     margin-top: 10px;
     padding: 2.5%;
 }
+
+.active {
+  background-color: #4B3D60;
+}
+
 }

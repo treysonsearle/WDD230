@@ -16,10 +16,10 @@
     font-size: 40px;
   }
 .menu li {
-  background-color: #08183A !important;
+  background-color: #08183A;
 }
 .menu li:hover {
-  background-color: #2e3f64 !important;
+  background-color: #2e3f64;
 }
 
   footer {

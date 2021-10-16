@@ -5,8 +5,9 @@ font-family: 'Merriweather Sans', sans-serif;
 body {
   background-color: #4B3D60;
    color: #FFFBE8;
-
 }
+
+
 
 header {
   display: flex;
@@ -115,6 +116,10 @@ h2 {
    background-color: #152852;
    width: 85%;
    margin-left: 7.5%;
+}
+
+#active {
+  background-color: #4B3D60;
 }
 
 footer {

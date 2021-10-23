@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Preston OmniWeather</title>
+   <meta name="author" content="Treyson Searle" />
+   <meta name="description" content="Weather for Preston city." />
+   <link rel="stylesheet" href="css/small.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/medium.css" />
+   <link rel="stylesheet" href="css/large.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="if-friday">
+      <h1 class="banner">Saturday = Preston Pancakes in the Park!
+         <br>9:00 a.m. Saturday at the city park!
+      </h1>
+   </div>
+   <header>
+      <div id="header-wrapper">
+         <img id="logo" src="images/weatherIcon.svg">
+         <div id="title">
+            <h1>OmniWeather</h1>
+            <p>Knowing the Weather Everywhere</p>
+         </div>
+      </div>
+   </header>
+
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="#">Home</a></li>
+         <li><a class="link active" href="#">Preston</a></li>
+         <li><a class="link" href="#">Soda Spring</a></li>
+         <li><a class="link" href="#">Fish Heaven</a></li>
+         <li><a class="link" href="#">Storm Center</a></li>
+         <li><a class="link" href="#">Gallery</a></li>
+      </ul>
+   </nav>
+   <div id="wrapper">
+      <main>
+         <h1>Preston Idaho</h1>
+         <section class="content">
+            <h3>Weather Summary</h3>
+            <picture><img class="background-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""></picture>
+            <div class="daily-weather">
+               <div> Currently: <p>Sunny</p>
+               </div>
+               <div> Temperature: <p id="temp">65</p>
+               </div>
+               <div> Wind Chill: <p id="windchill">63</p>
+               </div>
+               <div> Humidity: <p>32%</p>
+               </div>
+               <div> Wind Speed: <p id="speed">4</p>
+               </div>
+            </div>
+         </section>
+
+         <section>
+            <h3>5 Day Forcast</h3>
+            <div>
+               <div class="content">
+                  <span class="label">Monday</span>
+                  <img class="weather-icon" src="images/cloudy.svg" alt="cloudy">
+                  <span class="data">High Temp<br>58º</span>
+               </div>
+               <div class="content">
+                  <span class="label">Tuesday</span>
+                  <img class="weather-icon" src="images/rain.svg" alt="rain">
+                  <span class="data">High Temp<br>70º</span>
+               </div>
+               <div class="content">
+                  <span class="label">Wednesday</span>
+                  <img class="weather-icon" src="images/thunder.svg" alt="thunder">
+                  <span class="data">High Temp<br>63º</span>
+               </div>
+               <div class="content">
+                  <span class="label">Thursday</span>
+                  <img class="weather-icon" src="images/windy.svg" alt="windy">
+                  <span class="data">High Temp<br>66º</span>
+               </div>
+               <div class="content">
+                  <span class="label">Friday</span>
+                  <img class="weather-icon" src="images/sun.svg" alt="sunny">
+                  <span class="data">High Temp<br>55º</span>
+               </div>
+         </section>
+
+         <section class="content">
+
+            <h3 class="title">Some Title</h3>
+
+            <p class="article-content">Lucas ipsum dolor sit amet ventress k-3po skywalker biggs jawa luke chewbacca
+               luke mandalore moff. Hutt
+               jade jawa mon darth. Sith sidious sidious solo solo sith binks. Mandalore tatooine solo grievous watto
+               windu. Zabrak windu mara obi-wan skywalker grievous twi'lek grievous. Yavin vader vader boba darth moff
+               darth jango fett. Dooku obi-wan darth mara dantooine. Darth hutt moff darth. Jinn antilles antilles darth
+               hutt mon skywalker skywalker. Skywalker anakin droid skywalker jar moff. Solo yoda luke baba luke vader.
+
+               Ahsoka antilles grievous droid skywalker. Ewok yoda obi-wan skywalker ben ackbar padmé leia aayla. Tusken
+               raider ventress solo moff dantooine luke hutt twi'lek biggs. Ackbar sebulba baba solo. Moff organa cade
+               hutt jabba c-3p0 leia vader leia. Solo dooku yoda zabrak skywalker vader amidala. Jinn ewok amidala hutt
+               darth hutt mothma skywalker. Skywalker wedge wampa jabba jade mandalorians antilles solo. Moff leia darth
+               jinn luuke. Yavin palpatine yoda skywalker. Leia qui-gon antilles calamari jar mara amidala owen kessel.
+            </p>
+            <img class="background-img" src="images/night.jpg" alt="night-camping">
+
+         </section>
+
+         <section class="content">
+            <h3>Contact Information</h3>
+            <section id="contact-wrapper">
+               <div id="contact">
+                  <p>Phone: 555-555-5555</p>
+                  <p>Email: email@donotemail.org</p>
+                  <p>Address: 123 Home Street, Preston Idaho, 12345</p>
+               </div>
+               <img id="background-img-content" src="images/idaho-map.jpg" alt="idaho-map">
+            </section>
+         </section>
+
+      </main>
+      <footer>
+         &copy;OmniWeather | BYU-Idaho | Treyson Searle
+         <p><span id="current-date"></span></p>
+      </footer>
+   </div>
+</body>
+<script type="text/javascript" src="js/preston.js"></script>
+<script type="text/javascript" src="js/pancake.js"></script>
+<script type="text/javascript" src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script type="text/javascript" src="js/webfont.js"></script>
+
+</html>

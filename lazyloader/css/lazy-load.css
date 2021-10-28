@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
+
+picture {
+    grid-column: inherit;
+    display: flex;
+    margin: 1rem auto;
+}
+
+img[data-src] {
+    filter: blur(0.8em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+}
+
+h1 {
+    text-align: center;
+}

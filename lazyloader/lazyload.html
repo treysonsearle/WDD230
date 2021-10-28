@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>W07 Lazy Load</title>
+   <meta charset="utf-8" />
+   <meta name="description" content="Lesson 7 lazy load activity">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="./css/lazy-load.css">
+
+</head>
+
+<body>
+   <main>
+      <h1>Lazy Loading Images</h1>
+      <div class="images">
+         <picture>
+            <img alt="img-1" src="images/place-holder.png" data-src="./images/img1.jpeg">
+         </picture>
+         <picture>
+            <img alt="img-2" src="images/place-holder.png" data-src="./images/img2.jpeg">
+         </picture>
+         <picture>
+            <img alt="img-3" src="images/place-holder.png" data-src="./images/img3.jpeg">
+         </picture>
+         <picture>
+            <img alt="img-4" src="images/place-holder.png" data-src="./images/img4.jpeg">
+         </picture>
+         <picture>
+            <img alt="img-5" src="images/place-holder.png" data-src="./images/img5.jpeg">
+         </picture>
+
+      </div>
+   </main>
+   <script src="./js/lazyload.js"></script>
+</body>
+
+</html>

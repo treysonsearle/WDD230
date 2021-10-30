@@ -36,4 +36,11 @@
     margin-top: 10px;
     padding: 2.5%;
 }
+
+  .gallery-container {
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+  }
 }

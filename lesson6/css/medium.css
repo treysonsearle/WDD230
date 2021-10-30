@@ -28,4 +28,10 @@
     margin: auto;
     margin-top: 20px;
   }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5em;
+    }
 }

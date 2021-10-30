@@ -1,0 +1,94 @@
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Preston OmniWeather Gallery</title>
+   <meta name="author" content="Treyson Searle" />
+   <meta name="description" content="Weather Gallery." />
+   <link rel="stylesheet" href="css/small.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/medium.css" />
+   <link rel="stylesheet" href="css/large.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <div id="header-wrapper">
+         <img id="logo" src="images/weatherIcon.svg">
+         <div id="title">
+            <h1>OmniWeather</h1>
+            <p>Knowing the Weather Everywhere</p>
+         </div>
+      </div>
+   </header>
+
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="#">Home</a></li>
+         <li><a class="link" href="#">Preston</a></li>
+         <li><a class="link" href="#">Soda Spring</a></li>
+         <li><a class="link" href="#">Fish Heaven</a></li>
+         <li><a class="link" href="#">Storm Center</a></li>
+         <li><a class="link  active" href="#">Gallery</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <div class="title">
+         <h1>GALLERY</h1>
+      </div>
+
+      <div class="gallery-container">
+         <figure>
+            <img alt="Strom" src="./images/place-holder.png" data-src="./images/image1.jpg">
+            <figcaption>Image one</figcaption>
+         </figure>
+         <figure>
+            <img alt="Cloudy" src="./images/place-holder.png" data-src="./images/image2.jpg">
+            <figcaption>Image two</figcaption>
+         </figure>
+         <figure>
+            <img alt="Cloudy" src="./images/place-holder.png" data-src="./images/image3.jpg">
+            <figcaption>Image three</figcaption>
+         </figure>
+         <figure>
+            <img alt="Sunny Forest" src="./images/place-holder.png" data-src="./images/image4.jpg">
+            <figcaption>Image four</figcaption>
+         </figure>
+         <figure>
+            <img alt="Sunny Forest" src="./images/place-holder.png" data-src="./images/image5.jpg">
+            <figcaption>Image five</figcaption>
+         </figure>
+         <figure>
+            <img alt="Grassland" src="./images/place-holder.png" data-src="./images/image6.jpg">
+            <figcaption>Image six</figcaption>
+         </figure>
+         <figure>
+            <img alt="Cloudy Coast" src="./images/place-holder.png" data-src="./images/image7.jpg">
+            <figcaption>Image seven</figcaption>
+         </figure>
+         <figure>
+            <img alt="Sunny Coast" src="./images/place-holder.png" data-src="./images/image8.jpg">
+            <figcaption>Image eight</figcaption>
+         </figure>
+         <figure>
+            <img alt="Sunny Cove" src="./images/place-holder.png" data-src="./images/image9.jpg">
+            <figcaption>Image nine</figcaption>
+         </figure>
+      </div>
+   </main>
+
+   <footer>
+      &copy;OmniWeather | BYU-Idaho | Treyson Searle
+      <p><span id="current-date"></span></p>
+      <p><span id="timeDifference"></span></p>
+   </footer>
+   </div>
+   <script type="text/javascript" src="js/preston.js"></script>
+   <script type="text/javascript" src="js/lastvisit.js"></script>
+   <script src="./js/lazyload.js"></script>
+</body>
+
+</html>

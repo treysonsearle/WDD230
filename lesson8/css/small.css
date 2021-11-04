@@ -115,7 +115,7 @@ position: relative;
 #wrapper {
    background-color: #152852;
    width: 85%;
-   margin-left: 7.5%;
+  margin: auto;
 }
 
 .active {
@@ -213,4 +213,58 @@ footer {
 .gallery-container figcaption{
   color: #08183A;
   padding: 5px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    width: 85%;
+    margin: auto;
+}
+form div {
+    background-color: #08183A;
+    margin-bottom: 2rem;
+    color: #FFFBE8;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+form div > * {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input:not(.radio) {
+  text-decoration: none;
+  width: 95%;
+  clear: both;
+  margin-bottom: 1rem;
+  background-color: #4b3d6098;
+  color: #FFFBE8;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.radio {
+  width: 50px;
+}
+
+form textarea {
+    resize: none;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    width: 98%;
+    height: 125px;
+    box-sizing: border-box;
+}
+
+.submit {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
 }

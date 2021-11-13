@@ -1,0 +1,82 @@
+@media only screen and (min-width: 32.5em) {
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header p {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+.menu li {
+  background-color: #08183A !important;
+}
+.menu li:hover {
+  background-color: #2e3f64 !important;
+}
+
+  footer {
+    font-size: 25px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+
+    .gallery-container img {
+
+      width: 85%;
+      height: 85%;
+    }
+
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 5px solid #08183A;
+    border-radius: 12px;
+    width: 90%;
+    height: 95%;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+    margin: auto;
+  }
+
+  .cards section:nth-child(even) img {
+    margin: auto;
+  }
+
+  .cards section:nth-child(odd) #details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cards img {
+    width: 60%;
+    height: 60%;
+
+  }
+
+p {
+  margin-top: 6px;
+  margin: auto;
+}
+
+#details {
+  margin: auto;
+}
+
+}

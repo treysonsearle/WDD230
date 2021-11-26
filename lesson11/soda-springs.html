@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Preston OmniWeather</title>
+   <meta name="author" content="Treyson Searle" />
+   <meta name="description" content="Weather for Preston city." />
+   <link rel="stylesheet" href="css/small.css" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/medium.css" />
+   <link rel="stylesheet" href="css/large.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <div id="header-wrapper">
+         <img id="logo" src="images/weatherIcon.svg" alt="logo">
+         <div id="title">
+            <h1>OmniWeather</h1>
+            <p>Knowing the Weather Everywhere</p>
+         </div>
+      </div>
+   </header>
+
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="preston-11.html">Home</a></li>
+         <li><a class="link" href="preston-11.html">Preston</a></li>
+         <li><a class="link active" href="soda-springs.html">Soda Spring</a></li>
+         <li><a class="link" href="fish-haven.html">Fish Heaven</a></li>
+         <li><a class="link" href="stormcenter.html">Storm Center</a></li>
+         <li><a class="link" href="gallery-7.html">Gallery</a></li>
+      </ul>
+   </nav>
+   <div id="wrapper">
+      <main>
+         <h1>Soda Springs</h1>
+         <section class="content">
+            <h3>Weather Summary</h3>
+            <picture><img class="background-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""></picture>
+            <div class="daily-weather">
+               <div> Currently: <p id="current"></p>
+               </div>
+               <div> Temperature: <p id="temp"></p>
+               </div>
+               <div> Wind Chill: <p id="windchill"></p>
+               </div>
+               <div> Humidity: <p id="humidity"></p>
+               </div>
+               <div> Wind Speed: <p id="speed"></p>
+               </div>
+            </div>
+         </section>
+
+         <section>
+            <h3>5 Day Forcast</h3>
+            <div class="wrapper-forecast">
+               <div class="content">
+                  <span class="label" id="label1">Monday</span>
+                  <span class="data" id="temp1"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image1" alt="icon" />
+               </div>
+               <div class="content">
+                  <span class="label" id="label2">Tuesday</span>
+                  <span class="data" id="temp2"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image2" alt="icon" />
+               </div>
+               <div class="content">
+                  <span class="label" id="label3">Wednesday</span>
+                  <span class="data" id="temp3"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image3" alt="icon" />
+               </div>
+               <div class="content">
+                  <span class="label" id="label4">Thursday</span>
+                  <span class="data" id="temp4"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image4" alt="icon" />
+               </div>
+               <div class="content">
+                  <span class="label" id="label5">Friday</span>
+                  <span class="data" id="temp5"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image5" alt="icon" />
+               </div>
+            </div>
+         </section>
+
+         <section class="content">
+
+            <h3 class="title">Some Title</h3>
+
+            <p class="article-content">Lucas ipsum dolor sit amet ventress k-3po skywalker biggs jawa luke chewbacca
+               luke mandalore moff. Hutt
+               jade jawa mon darth. Sith sidious sidious solo solo sith binks. Mandalore tatooine solo grievous watto
+               windu. Zabrak windu mara obi-wan skywalker grievous twi'lek grievous. Yavin vader vader boba darth moff
+               darth jango fett. Dooku obi-wan darth mara dantooine. Darth hutt moff darth. Jinn antilles antilles darth
+               hutt mon skywalker skywalker. Skywalker anakin droid skywalker jar moff. Solo yoda luke baba luke vader.
+
+               Ahsoka antilles grievous droid skywalker. Ewok yoda obi-wan skywalker ben ackbar padmé leia aayla. Tusken
+               raider ventress solo moff dantooine luke hutt twi'lek biggs. Ackbar sebulba baba solo. Moff organa cade
+               hutt jabba c-3p0 leia vader leia. Solo dooku yoda zabrak skywalker vader amidala. Jinn ewok amidala hutt
+               darth hutt mothma skywalker. Skywalker wedge wampa jabba jade mandalorians antilles solo. Moff leia darth
+               jinn luuke. Yavin palpatine yoda skywalker. Leia qui-gon antilles calamari jar mara amidala owen kessel.
+            </p>
+            <img class="background-img" src="images/night.jpg" alt="night-camping">
+
+         </section>
+
+         <section class="content">
+            <h3>Contact Information</h3>
+            <div id="contact-wrapper">
+               <div id="contact">
+                  <p>Phone: 555-555-5555</p>
+                  <p>Email: email@donotemail.org</p>
+                  <p>Address: 123 Home Street, Preston Idaho, 12345</p>
+               </div>
+               <img id="background-img-content" src="images/idaho-map.jpg" alt="idaho-map">
+            </div>
+         </section>
+
+      </main>
+      <footer>
+         &copy;OmniWeather | BYU-Idaho | Treyson Searle
+         <p><span id="current-date"></span></p>
+      </footer>
+   </div>
+   <script src="js/preston.js"></script>
+   <script src="js/pancake.js"></script>
+   <script src="js/weather-soda-springs.js"></script>
+</body>
+
+
+</html>

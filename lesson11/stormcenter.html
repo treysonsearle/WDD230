@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Storm Center OmniWeather</title>
+   <meta name="author" content="Treyson Searle" />
+   <meta name="description" content="Storm Center" />
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/small.css" />
+   <link rel="stylesheet" href="css/medium.css" />
+   <link rel="stylesheet" href="css/large.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <div id="header-wrapper">
+         <img id="logo" src="images/weatherIcon.svg">
+         <div id="title">
+            <h1>OmniWeather</h1>
+            <p>Knowing the Weather Everywhere</p>
+         </div>
+      </div>
+   </header>
+
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="preston-11.html">Home</a></li>
+         <li><a class="link" href="preston-11.html">Preston</a></li>
+         <li><a class="link" href="soda-springs.html">Soda Spring</a></li>
+         <li><a class="link" href="fish-haven.html">Fish Heaven</a></li>
+         <li><a class="link active" href="stormcenter.html">Storm Center</a></li>
+         <li><a class="link" href="gallery-7.html">Gallery</a></li>
+      </ul>
+   </nav>
+   <div id="wrapper">
+      <main>
+         <h2>Storm Center</h2>
+         <form action="thanks.html">
+            <div>
+               <h3>Contact Information</h3>
+               <label for="fullname">Full name:
+                  <input type="text" name="name" id="fullname" minlength="5" pattern="[A-Za-z0-9_]{1,15}"
+                     required></label>
+               <label for="email">
+                  Email:
+                  <input type="email" name="email" id="email" placeholder="example@email.com" required></label>
+               <label for="phonenumber">
+                  Phone Number:
+                  <input type="tel" name="phonenumber" id="phonenumber" required></label>
+            </div>
+            <div>
+               <h3>Storm Information</h3>
+               <label for="zipcode">Zip Code:
+                  <input type="number" name="zipcode" id="zipcode" required></label>
+               <label for="stormdate">Storm Date:
+                  <input type="date" id="stormdate" name="stormdate" required></label>
+               <label for="stormtype">Storm Type:
+                  <input list="stormtypes" id="stormtype" name="stormtype">
+                  <datalist id="stormtypes">
+                     <option value="Flash Flood">
+                     <option value="Hail">
+                     <option value="Hurricane">
+                     <option value="Thunderstorm">
+                     <option value="Tornado">
+                  </datalist></label>
+               <label for="stormsev">Storm Severity:
+                  <input type="range" id="stormsev" name="stormseverity" min="1" max="10"></label>
+               <label for="stormreg">Storm Region:
+                  <select id="stormreg" required>
+                     <option disabled label="Select Region">
+                     <option value="preston">Preston</option>
+                     <option value="soda springs">Soda Springs</option>
+                     <option value="fish haven">Fish Haven</option>
+                  </select></label>
+               <div class="selection">
+                  <p>Are you in Danger?</p>
+                  <label for="yes">
+                     <input class="radio" type="radio" name="danger" id="yes" value="yes" />
+                     Yes
+                  </label>
+                  <label for="maybe">
+                     <input class="radio" type="radio" name="danger" id="maybe" value="maybe" />
+                     Maybe
+                  </label>
+                  <label for="no">
+                     <input class="radio" type="radio" name="danger" id="no" value="no" />
+                     No
+                  </label>
+               </div>
+               <label for="comments">Additional Comments:</label>
+               <textarea id="comments" name="comments"></textarea>
+            </div>
+            <input class="submit" type="submit" value="Report Storm" id="submit">
+         </form>
+      </main>
+      <footer>
+         &copy;OmniWeather | BYU-Idaho | Treyson Searle
+         <p><span id="current-date"></span></p>
+      </footer>
+   </div>
+</body>
+
+</html>

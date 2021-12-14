@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #3b4a26
+  }
+
+  .menu li {
+    display: block;
+    flex: 1;
+    height: 35px;
+    padding: 10px;
+    color: #EADEB8;
+  }
+
+  .menu li:first-child {
+    display: none;
+  }
+
+  .menu a {
+    font-size: 28px;
+  }
+
+.menu li:nth-child(even) {
+  background-color: #3b4a26;
+}
+
+.menu li:hover {
+    background-color: #576e38;
+    text-shadow: 1.2px 1.2px rgb(0, 0, 0);
+    color: #FFFBE8;
+  }
+}

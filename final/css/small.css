@@ -1,0 +1,99 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(#EADEB8 55%, #CFB784);
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  color: #EADEB8;
+  display: flex;
+  width: 100%;
+  background: #C56824;
+  padding: 1.5rem;
+  justify-content: space-around;
+}
+
+header > div {
+  height: 90%;
+}
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px;
+}
+
+#title h1 {
+  font-size: 42px;
+  margin-bottom: 42px;
+
+}
+
+#title p {
+  text-align: center;
+}
+
+
+.menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+a {
+   color: #EADEB8;
+}
+
+.menu li {
+  display: none;
+
+}
+
+.menu li:first-child {
+  display: block;
+  list-style-type: none;
+  height: 30px;
+  padding-top: 15px;
+  font-size: 20px;
+  background-color: #3b4a26;
+   color: #EADEB8;
+}
+
+.menu li:nth-child(odd) {
+  background-color: #3b4a26;
+}
+
+.menu li:nth-child(even) {
+  background-color: #536837;
+}
+
+.menu li:hover {
+  background-color: #A09F57;
+}
+
+
+.responsive li {
+  display: block;
+  height: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#background {
+position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+footer {
+  width: 100%;  
+  height: 8vh;
+  background: #A09F57;
+  position: absolute;
+  bottom: 0;
+}

@@ -261,6 +261,22 @@ main > div > h2 {
 }
 
 
+.cards.grid {
+  
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards.grid section{
+  width: 27%;
+  overflow-wrap: break-word;
+}
+
+.cards.grid section img{
+  width: 40%;
+}
+
 footer {
   background: #A09F57;
   font-size: 14px;

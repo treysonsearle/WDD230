@@ -18,31 +18,6 @@
 </head>
 
 <body>
-   <header>
-      <div id="header-wrapper">
-         <div id="title">
-            <h1>MesaB2B</h1>
-            <p>Meeting Businesses with Care</p>
-         </div>
-      </div>
-      <div>
-         <h3>Weather Summary</h3>
-         <picture><img class="background-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""></picture>
-         <div class="daily-weather">
-            <div> Currently: <p id="current"></p>
-            </div>
-            <div> Temperature: <p id="temp"></p>
-            </div>
-            <div> Wind Chill: <p id="windchill"></p>
-            </div>
-            <div> Humidity: <p id="humidity"></p>
-            </div>
-            <div> Wind Speed: <p id="speed"></p>
-            </div>
-         </div>
-      </div>
-   </header>
-
    <nav>
       <ul class="menu">
          <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
@@ -53,29 +28,113 @@
          <li><a class="link" href="contact.html">Contact Us</a></li>
       </ul>
    </nav>
-   <div id="wrapper">
-      <main>
-         <h1>Mesa Business to Business</h1>
+   <header>
+
+      <div id="header-wrapper">
+         <div id="title">
+            <h1>MesaB2B</h1>
+            <p>Meeting Businesses with Care</p>
+         </div>
+      </div>
+
+      <div>
+         <h3>Today's Weather</h3>
+         <div class="daily-weather">
+            <div id="current">
+            </div>
+            <div id="temp">
+            </div>
+            <div id="humidity">
+            </div>
+            <div class="forecast">
+               <div>
+                  <span class="label" id="label1"></span>
+                  <span class="data" id="temp1"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image1" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label2"></span>
+                  <span class="data" id="temp2"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image2" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label3"></span>
+                  <span class="data" id="temp3"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image3" alt="icon" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
 
 
-         <section class="content">
+   <main>
+      <section class="main-content">
+         <h1>History</h1>
+         <p class="text">Mesa is a city in Maricopa County, Arizona and part of the Phoenix-Mesa-Scottsdale Metropolitan
+            Area. It is
+            the 38th largest city in the United States of America. It was settled by members of the Church of Jesus
+            Christ of Latter-day Saints in January 1878.</p>
+      </section>
+      <section class="main-content">
+         <h1>Population and Demographic</h1>
+         <p class="text">Total Population is 504,258. 83.8% are white, then 27.4% hispanic, 3.7% African American and 2%
+            Asian.</a>
+         </p>
+      </section>
+      <div id=flex>
+         <div id="wrapper">
+            <h1 class="section-name">Events</h1>
+            <div id="large-flex">
+               <section class="content">
+                  <h2>The Nutcracker</h2>
+                  <img class="business-img" src="images/nutcracker.jpg" alt="Nutcracker play" />
+                  <div>
+                     <h3>Summary: Join in the festive Nutcracker play as you experience the russian fantasy of a girl
+                        befriending a nutcracker!</h3>
+                     <h3>Location: 1 E Main St, Mesa, AZ 85201</h3>
+                     <h3>Social Media: <a href="#">@MesaArtCenter</a></h3>
+                     <h3>Phone: (480) 644-6500</h3>
+                  </div>
+               </section>
 
-         </section>
+               <section class="content">
+                  <h2>Merry Main Street</h2>
+                  <img class="business-img" src="images/merry.png" alt="merry main street" />
+                  <div>
+                     <h3>Summary: Enjoy christmas festivities with the whole community in down town Mesa! Santa will be
+                        there!
+                     </h3>
+                     <h3>Location: Downtown Mesa
+                        Mesa, Arizona 85201</h3>
+                     <h3>Social Media: <a href="#">@CityOfMesa</a></h3>
+                     <h3>Phone: (480) 644-2211</h3>
+                  </div>
+               </section>
 
-         <section class="content">
+               <section class="content">
+                  <h2>Neighborhood Comedy Theatre</h2>
+                  <img class="business-img" src="images/comedy.jpg" alt="=comedy show" />
+                  <div>
+                     <h3>Summary: Enjoy a laugh with family and friends to a fun and clean improve show!
+                     </h3>
+                     <h3>Location: 214 W. Main St.
+                        Mesa, Arizona 85201</h3>
+                     <h3>Social Media: <a href="#">@ImprovMesa</a></h3>
+                     <h3>Phone: (602) 374-5638</h3>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      &copy;MesaB2B | BYU-Idaho | Treyson Searle
+      <p><span id="current-date"></span></p>
+   </footer>
 
-         </section>
-
-         <section class="content">
-         </section>
-
-      </main>
-      <footer>
-         &copy;MesaB2B | BYU-Idaho | Treyson Searle
-         <p><span id="current-date"></span></p>
-      </footer>
-   </div>
    <script src="js/index.js"></script>
+   <script src="js/weather.js"></script>
 </body>
 
 

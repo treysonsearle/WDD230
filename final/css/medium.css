@@ -1,3 +1,91 @@
 @media only screen and (min-width: 32.5em) {
+  #flex {
+    display: flex;
+    justify-content: space-around;
+  }
+.business-img {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
 
+.section-name {
+  width: auto;
+  margin: auto;
+}
+
+.content {
+  margin: 15px auto;
+  padding: 8px;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+  .content > div {
+    flex: 1 0 50%;
+    margin: auto;
+  }
+  .content>h2:first-child {
+    flex: 0 1 100%;
+  }
+
+  .forecast div img{
+  width: 100%;
+}
+
+  .text {
+  width: 75%;
+  margin: auto;
+}
+
+.content.contact {
+width: 40%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.content.contact ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+#key {
+  font-size: 19px;
+}
+
+form h3 {
+  text-align: center;
+}
+
+.content.contact iframe {
+  width: 70%;
+  margin-top: 10px;
+}
+
+main > div > h2 {
+  font-size: 22px;
+}
+
+
+.content.contact form {
+  width:  60%;
+}
+
+input {
+margin-left: 10%;
+width: 88%;
+}
+
+.wrapper-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 }

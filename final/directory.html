@@ -18,64 +18,138 @@
 </head>
 
 <body>
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="home.html">Home</a></li>
+         <li><a class="link " href="mesa.html">Mesa</a></li>
+         <li><a class="link" href="join.html">Join</a></li>
+         <li><a class="link active" href="directory.html">Directory</a></li>
+         <li><a class="link" href="contact.html">Contact Us</a></li>
+      </ul>
+   </nav>
    <header>
+
       <div id="header-wrapper">
          <div id="title">
             <h1>MesaB2B</h1>
             <p>Meeting Businesses with Care</p>
          </div>
       </div>
+
       <div>
-         <h3>Weather Summary</h3>
-         <picture><img class="background-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""></picture>
+         <h3>Today's Weather</h3>
          <div class="daily-weather">
-            <div> Currently: <p id="current"></p>
+            <div id="current">
             </div>
-            <div> Temperature: <p id="temp"></p>
+            <div id="temp">
             </div>
-            <div> Wind Chill: <p id="windchill"></p>
+            <div id="humidity">
             </div>
-            <div> Humidity: <p id="humidity"></p>
-            </div>
-            <div> Wind Speed: <p id="speed"></p>
+            <div class="forecast">
+               <div>
+                  <span class="label" id="label1"></span>
+                  <span class="data" id="temp1"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image1" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label2"></span>
+                  <span class="data" id="temp2"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image2" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label3"></span>
+                  <span class="data" id="temp3"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image3" alt="icon" />
+               </div>
             </div>
          </div>
       </div>
    </header>
 
-   <nav>
-      <ul class="menu">
-         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
-         <li><a class="link" href="home.html">Home</a></li>
-         <li><a class="link active" href="mesa.html">Mesa</a></li>
-         <li><a class="link" href="join.html">Join</a></li>
-         <li><a class="link" href="directory.html">Directory</a></li>
-         <li><a class="link" href="contact.html">Contact Us</a></li>
-      </ul>
-   </nav>
-   <div id="wrapper">
-      <main>
-         <h1>Mesa Business to Business</h1>
 
+   <main>
+      <section class="main-content">
+         <h1>Purpose</h1>
+         <p>To connect and cultivate the community of Mesa Arizona!</p>
+      </section>
+      <section class="main-content">
+         <h1>Join Now!</h1>
+         <p>Members are invite to exclusive events and once in a lifetime deals! <a href="join.html">Sign up Today!</a>
+         </p>
+      </section>
+      <div id=flex>
+         <div id="wrapper">
+            <h1 class="section-name">Local Businesses</h1>
+            <div id="large-flex">
+               <section class="content">
+                  <h2>Gotham City Comics</h2>
+                  <img class="business-img" src="images/comic.jpg" alt="comicbook store" />
+                  <div>
+                     <h3>Summary: A local comic store by day and a boredom crime-fighter by night!
+                        We host serveral events for
+                        comicbook and TCG fans all around!</h3>
+                     <h3>Location: 46 W Main St, Mesa, AZ 85201</h3>
+                     <h3>Social Media: <a href="#">@GothamComicsMesa</a></h3>
+                     <h3>Phone: (480) 649-3065</h3>
+                  </div>
+               </section>
 
-         <section class="content">
+               <section class="content">
+                  <h2>República Empanada Restaurant</h2>
+                  <img class="business-img" src="images/empanada.png" alt="empanada" />
+                  <div>
+                     <h3>Summary: A local treat for authentic spanish origin food.
+                        Once you have one empanada. You nanda put them down.
+                     </h3>
+                     <h3>Location: 204 E 1st Ave, Mesa, AZ 85210</h3>
+                     <h3>Social Media: <a href="#">@RepublicaEmpanada</a></h3>
+                     <h3>Phone: (480) 969-1343</h3>
+                  </div>
+               </section>
 
-         </section>
+               <section class="content">
+                  <h2>Tyrannostorus</h2>
+                  <img class="business-img" src="images/trex.jpeg" alt="=trex skull" />
+                  <div>
+                     <h3>Summary: A local fossil store to fuel your dino needs. Come see what dusty bone and digs we
+                        have
+                        in
+                        store!
+                     </h3>
+                     <h3>Location: 1816 W Baseline Rd, Mesa, AZ 85202</h3>
+                     <h3>Social Media: <a href="#">@TyrannostorusMesa</a></h3>
+                     <h3>Phone: (480) 597-4467</h3>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div id="wrapper">
+            <h1 class="section-name">Upcoming Events</h1>
+            <div id="large-flex">
+               <section class="content">
+                  <h2>Pioneer Bash</h2>
+                  <img class="business-img" src="images/pioneer.jpg" alt="park with water works" />
+                  <div>
+                     <h3>Summary: Come celebrate pioneer day at your local park! Enjoy food truck cuisine and local
+                        entertainment! Fun for the whole family!
+                     </h3>
+                     <h3>Location: 526 E Main St, Mesa, AZ 85203</h3>
+                     <h3>Social Media: <a href="#">@MesaEvents</a></h3>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      &copy;MesaB2B | BYU-Idaho | Treyson Searle
+      <p><span id="current-date"></span></p>
+   </footer>
 
-         <section class="content">
-
-         </section>
-
-         <section class="content">
-         </section>
-
-      </main>
-      <footer>
-         &copy;MesaB2B | BYU-Idaho | Treyson Searle
-         <p><span id="current-date"></span></p>
-      </footer>
-   </div>
    <script src="js/index.js"></script>
+   <script src="js/weather.js"></script>
+   <script src="js/cards.js"></script>
 </body>
 
 

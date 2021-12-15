@@ -18,64 +18,138 @@
 </head>
 
 <body>
+   <nav>
+      <ul class="menu">
+         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
+         <li><a class="link" href="home.html">Home</a></li>
+         <li><a class="link" href="mesa.html">Mesa</a></li>
+         <li><a class="link  active" href="join.html">Join</a></li>
+         <li><a class="link" href="directory.html">Directory</a></li>
+         <li><a class="link" href="contact.html">Contact Us</a></li>
+      </ul>
+   </nav>
    <header>
+
       <div id="header-wrapper">
          <div id="title">
             <h1>MesaB2B</h1>
             <p>Meeting Businesses with Care</p>
          </div>
       </div>
+
       <div>
-         <h3>Weather Summary</h3>
-         <picture><img class="background-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""></picture>
+         <h3>Today's Weather</h3>
          <div class="daily-weather">
-            <div> Currently: <p id="current"></p>
+            <div id="current">
             </div>
-            <div> Temperature: <p id="temp"></p>
+            <div id="temp">
             </div>
-            <div> Wind Chill: <p id="windchill"></p>
+            <div id="humidity">
             </div>
-            <div> Humidity: <p id="humidity"></p>
-            </div>
-            <div> Wind Speed: <p id="speed"></p>
+            <div class="forecast">
+               <div>
+                  <span class="label" id="label1"></span>
+                  <span class="data" id="temp1"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image1" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label2"></span>
+                  <span class="data" id="temp2"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image2" alt="icon" />
+               </div>
+               <div>
+                  <span class="label" id="label3"></span>
+                  <span class="data" id="temp3"></span>
+                  <img class="weather-icon" src="images/place-holder.png" id="image3" alt="icon" />
+               </div>
             </div>
          </div>
       </div>
    </header>
 
-   <nav>
-      <ul class="menu">
-         <li><a id="toggle-menu" onclick="toggleMenu()">Menu</a></li>
-         <li><a class="link" href="home.html">Home</a></li>
-         <li><a class="link active" href="mesa.html">Mesa</a></li>
-         <li><a class="link" href="join.html">Join</a></li>
-         <li><a class="link" href="directory.html">Directory</a></li>
-         <li><a class="link" href="contact.html">Contact Us</a></li>
-      </ul>
-   </nav>
-   <div id="wrapper">
-      <main>
-         <h1>Mesa Business to Business</h1>
 
+   <main>
+      <div>
+         <h2>MesaB2B Benefits its members greatly! You will get advertising within the MesaB2B community and invited to
+            exclusive events to further your business</h2>
+         <div id="key">
+            <ul>Non-Profit ($100)
+               <li>Invited to all Events</li>
+               <li>Supported by local fundraisers</li>
+               <li>Yearly Promotions</li>
+            </ul>
+            <ul>Bronze ($200)
+               <li>Invited to exclusive Some Events</li>
+               <li>3 Yearly promotions</li>
+               <li>Marketing during events</li>
+            </ul>
+            <ul>Silver ($400)
+               <li>Invited to exclusive Most Events</li>
+               <li>Monthly promtions</li>
+               <li>Marketing during events</li>
+            </ul>
+            <ul>Gold ($1000)
+               <li>Invited to exclusive All Events</li>
+               <li>FrontPage Promotions</li>
+               <li>Marketing during events</li>
+               <li>Join the premium club for customers</li>
+            </ul>
+         </div>
+      </div>
+      <section class="content">
+         <h2>Join Us</h2>
+         <form action="success.html">
+            <h3>Business Information</h3>
+            <label for="firstname">
+               First name:
+               <input type="text" name="name" id="firstname" minlength="5" pattern="[A-Za-z0-9_]{1,15}"
+                  required></label>
+            <label for="lastname">
+               Last name:
+               <input type="text" name="name" id="lastname" minlength="5" pattern="[A-Za-z0-9_]{1,15}" required>
+            </label>
+            <label for="title">
+               Title:
+               <input type="text" name="tile" minlength="5" pattern="[A-Za-z0-9_]{1,15}"></label>
+            <label for="email">
+               Email:
+               <input type="email" name="email" id="email" placeholder="example@email.com" required></label>
+            <label for="phonenumber">
+               Phone Number:
+               <input type="tel" name="phonenumber" id="phonenumber"></label>
+            <label for="businessname">
+               Business name:
+               <input type="text" name="name" id="businessname" minlength="5" pattern="[A-Za-z0-9_]{1,15}">
+            </label>
+            <label for="businessaddress">
+               Business Address:
+               <input type="text" name="name" id="businessaddress" minlength="5" pattern="[A-Za-z0-9_]{1,15}">
+            </label>
+            <label for="businesswebsite">
+               Business Website:
+               <input type="text" name="name" id="businesswebsite" minlength="5" pattern="[A-Za-z0-9_]{1,15}">
+            </label>
+            <label for="membership">Membership Level:
+               <input list="memberships" id="membership" name="membership">
+               <datalist id="memberships">
+                  <option value="Non-Profit ($100)">
+                  <option value="Bronze ($200)">
+                  <option value="Silver ($400)">
+                  <option value="Gold ($1000)">
+               </datalist></label>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <input class="submit" type="submit" value="Join Membership" id="submit">
+         </form>
+      </section>
+   </main>
+   <footer>
+      &copy;MesaB2B | BYU-Idaho | Treyson Searle
+      <p><span id="current-date"></span></p>
+   </footer>
 
-         <section class="content">
-
-         </section>
-
-         <section class="content">
-
-         </section>
-
-         <section class="content">
-         </section>
-
-      </main>
-      <footer>
-         &copy;MesaB2B | BYU-Idaho | Treyson Searle
-         <p><span id="current-date"></span></p>
-      </footer>
-   </div>
    <script src="js/index.js"></script>
+   <script src="js/weather.js"></script>
 </body>
 
 

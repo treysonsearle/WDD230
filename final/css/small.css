@@ -179,7 +179,7 @@ position: absolute;
 }
 
 .forecast div img{
-  width: 50%;
+  max-width: 50%;
 }
 
 form {
@@ -348,6 +348,8 @@ main > div > h2 {
   width: 80px;
   height: 80px;
 }
+
+
 
 footer {
   background: #A09F57;

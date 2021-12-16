@@ -83,6 +83,43 @@ margin-left: 10%;
 width: 88%;
 }
 
+.cards.grid section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.cards.grid p{
+  display: block;
+
+  font-size: .7rem;
+  margin: 3px;
+}
+
+.cards section img{
+  object-fit: contain;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 1rem;
+}
+
+.cards section .link {
+  max-width: 100%;
+  display: block;
+  color: #3b4a26;
+  margin: auto;
+}
+
+.cards.grid section .link {
+  display: block;
+  color: #3b4a26;
+  font-size: .7rem;
+  margin: 3px;
+  overflow-wrap:  break-word;
+}
+
+
 .wrapper-flex {
   display: flex;
   flex-direction: row;

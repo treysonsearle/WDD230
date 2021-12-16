@@ -254,6 +254,13 @@ main > div > h2 {
   color: #b3a98b
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .content.contact iframe {
   width: 70%;
@@ -265,9 +272,9 @@ main > div > h2 {
   color: #1c2115;
   width: 90%;
   display: inline-grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px;
-  gap: 1rem;
+  grid-template-rows:   23% 23% 23%;
+  grid-template-columns: 23% 23% 23%;
+  gap: 1.2rem;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
@@ -276,6 +283,7 @@ main > div > h2 {
 
 .cards.grid p{
   display: none;
+
 }
 
 .cards.grid section{
@@ -291,6 +299,36 @@ main > div > h2 {
   width: 100%;
 }
 
+.cards section {
+  margin: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  overflow-wrap: break-word;
+
+}
+
+.cards section .link {
+  display: block;
+  color: #3b4a26;
+  font-size: 1em;
+  margin: 1rem;
+}
+
+.cards section p {
+  margin: 1rem;
+  color: #1c2115;
+  font-size: 1em;
+  overflow-wrap: break-word;
+}
+
+.cards section img {
+  width: 60%;
+}
+
 
 .cards.grid section .link {
   display: none;
@@ -304,5 +342,4 @@ footer {
   color: #1c2115;
   margin: auto;
   padding: 1rem;
-  
 }

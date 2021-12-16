@@ -17,7 +17,7 @@ fetch(requestURL)
          let pic = document.createElement("a")
          let logo = document.createElement("img")
          card.setAttribute("class", `order${businesses[i].order}`)
-         h2.textContent = `${businesses[i].name}}`;
+         h2.textContent = `${businesses[i].name}`;
          address.textContent = `Address: ${businesses[i].address}`;
          number.textContent = `Phone Number: ${businesses[i].number}`;
          website.textContent = `Website: ${businesses[i].website}`;

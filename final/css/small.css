@@ -262,19 +262,39 @@ main > div > h2 {
 
 
 .cards.grid {
-  
+  color: #1c2115;
   width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: inline-grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  gap: 1rem;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.cards.grid p{
+  display: none;
 }
 
 .cards.grid section{
-  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  width: 100%;
   overflow-wrap: break-word;
 }
 
 .cards.grid section img{
-  width: 40%;
+  width: 100%;
+}
+
+
+.cards.grid section .link {
+  display: none;
+  color: #3b4a26;
 }
 
 footer {
@@ -284,4 +304,5 @@ footer {
   color: #1c2115;
   margin: auto;
   padding: 1rem;
+  
 }

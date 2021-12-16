@@ -217,6 +217,16 @@ background-color: #EADEB8;
   font-size: 32px;
 }
 
+button {
+  background-color: #3b4a26; /* Green */
+  border: none;
+  color: #EADEB8;
+  margin-top: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 32px;
+}
+
 #key {
   display: flex;
   justify-content: space-evenly;
@@ -333,6 +343,11 @@ main > div > h2 {
 .cards.grid section .link {
   display: none;
   color: #3b4a26;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
 }
 
 footer {

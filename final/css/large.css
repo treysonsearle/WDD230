@@ -37,7 +37,7 @@
     justify-content: space-around;
   }
 
-  #wrapper {
+  .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -48,7 +48,7 @@
     height: 30%;
   }
 
-  #large-flex {
+  .large-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
